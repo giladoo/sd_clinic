@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <!--__________________________________ Prescriptions ____________________________________-->
+
+    <record id="prescriptions_list" model="ir.ui.view">
+        <field name="name">Prescriptions</field>
+        <field name="model">sd_clinic.prescriptions</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="visit_no"/>
+                <field name="national_id"/>
+                <field name="visit_date"/>
+                <field name="therapy"/>
+                <field name="project_id"/>
+                <field name="state" widget="badge"
+                       decoration-success="state == 'closed'"
+                       decoration-warning="state == 'ongoing'"
+                />
+            </list>
+        </field>
+    </record>
+
+    <record id="prescriptions_form" model="ir.ui.view">
+        <field name="name">Prescriptions</field>
+        <field name="model">sd_clinic.prescriptions</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <header>
+                        <div class="oe_button_box">
+                        </div>
+                        <field name="state" widget="statusbar" options="{'clickable': '1', 'fold_field': 'fold'}"
+                               invisible="0"/>
+
+                    </header>
+                    <field name="visit_no" readonly="1" invisible="id == False"/>
+                    <!--                        <div class="oe_button_box" name="button_box"/>-->
+                    <!--                        <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="active"/>-->
+                    <!--                        <field name="image" widget='image' class="oe_avatar" options='{"preview_image": "avatar_128"}'/>-->
+                    <div class="oe_title pe-0 ">
+                        <h1>
+                            <field name="national_id" class="w-100 my-4" placeholder="search by name or national ID"/>
+                            <!--                                <field name="name"/>-->
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="age"/>
+                            <!--                                <field name="gender"/>-->
+                            <!--                                <field name="birth_date"/>-->
+                        </group>
+                        <group>
+                            <field name="case_type"/>
+                            <field name="project_id" options="{'no_create': True, 'no_edit': True, 'no_open': True}"/>
+                            <field name="visit_date"/>
+                            <field name="therapy" options="{'no_create': True, 'no_edit': True, 'no_open': True}"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="prescriptions_search" model="ir.ui.view">
+        <field name="name">Medicine Inventory</field>
+        <field name="model">sd_clinic.prescriptions</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="visit_no"/>
+                <field name="national_id"/>
+                <field name="project_id"/>
+                <field name="state"/>
+
+                <filter name="project_name" string="Project" context="{'group_by': 'project_id'}"/>
+                <filter name="ongoing" string="Ongoing" domain="[('state', '=', 'ongoing')]"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="prescriptions_act_window" model="ir.actions.act_window">
+        <field name="name">Prescriptions</field>
+        <field name="res_model">sd_clinic.prescriptions</field>
+        <field name="view_mode">list,form</field>
+        <field name="context">{'search_default_ongoing': 1, 'search_default_project_name': 1, }</field>
+    </record>
+
+    <!--__________________________________ Prescriptions ____________________________________-->
+
+    <record id="therapy_types_list" model="ir.ui.view">
+        <field name="name">Therapy Types</field>
+        <field name="model">sd_clinic.therapy_types</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="therapy_types_act_window" model="ir.actions.act_window">
+        <field name="name">Therapy Types</field>
+        <field name="res_model">sd_clinic.therapy_types</field>
+        <field name="view_mode">list</field>
+        <!--        <field name="context">{'search_default_medicine_name': 1}</field>-->
+    </record>
+
+    <!--___________________________________ Menu ___________________________________-->
+
+    <menuitem name="Clinic"
+              id="clinic_root_menu"
+              action="prescriptions_act_window"
+
+              groups="sd_clinic.group_users"/>
+
+    <menuitem name="Configuration"
+              id="clinic_configuration_menu"
+              sequence="999"
+              parent="clinic_root_menu"
+              groups="sd_clinic.group_doctors"/>
+
+    <!--    <menuitem name="Prescriptions"-->
+    <!--              id="prescriptions_menu"-->
+    <!--              parent="clinic_root_menu"-->
+    <!--              action="prescriptions_act_window"-->
+    <!--              groups="sd_clinic.group_doctors"/>-->
+
+    <menuitem name="Therapy"
+              id="therapy_types_menu"
+              parent="clinic_configuration_menu"
+              action="therapy_types_act_window"
+              groups="sd_clinic.group_doctors"/>
+
+</odoo>

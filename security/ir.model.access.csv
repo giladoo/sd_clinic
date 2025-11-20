@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sd_clinic_medicine_admins,sd_clinic.medicine,model_sd_clinic_medicine,sd_clinic.group_admins,1,1,1,1
+access_sd_clinic_medicine_types_admins,sd_clinic.medicine_types,model_sd_clinic_medicine_types,sd_clinic.group_admins,1,1,1,1
+access_sd_clinic_medicine_inventory_admins,sd_clinic.medicine_inventory,model_sd_clinic_medicine_inventory,sd_clinic.group_admins,1,1,1,1
+access_sd_clinic_patients_admins,sd_clinic.patients,model_sd_clinic_patients,sd_clinic.group_admins,1,1,1,1
+access_sd_clinic_prescriptions_admins,sd_clinic.prescriptions,model_sd_clinic_prescriptions,sd_clinic.group_admins,1,1,1,1
+access_sd_clinic_therapy_types_admins,sd_clinic.therapy_types,model_sd_clinic_therapy_types,sd_clinic.group_admins,1,1,1,1

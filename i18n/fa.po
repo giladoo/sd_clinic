@@ -1,0 +1,584 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sd_clinic
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-20 15:31+0000\n"
+"PO-Revision-Date: 2025-11-20 19:02+0330\n"
+"Last-Translator: Arash Homayounfar <homayounfar@msn.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: fa\n"
+"X-Generator: Poedit 2.2\n"
+
+#. module: sd_clinic
+#: model:ir.model.fields.selection,name:sd_clinic.selection__sd_clinic_patients__blood_group__ab+
+msgid "AB+"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields.selection,name:sd_clinic.selection__sd_clinic_patients__blood_group__ab-
+msgid "AB-"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields.selection,name:sd_clinic.selection__sd_clinic_prescriptions__case_type__accident
+msgid "Accident"
+msgstr "حادثه"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__message_needaction
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__activity_ids
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__activity_exception_decoration
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__activity_state
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__activity_type_icon
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: sd_clinic
+#: model:res.groups,name:sd_clinic.group_admins
+msgid "Admins"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__age
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__age
+msgid "Age"
+msgstr "سن"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__message_attachment_count
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__birth_date
+msgid "Birth Date"
+msgstr "تاریخ تولد"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__blood_group
+msgid "Blood Group"
+msgstr "گروه خونی"
+
+#. module: sd_clinic
+#: model:ir.model.fields.selection,name:sd_clinic.selection__sd_clinic_prescriptions__state__canceled
+msgid "Canceled"
+msgstr "لغو شده"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__case_type
+msgid "Case Type"
+msgstr "نوع مراجعه"
+
+#. module: sd_clinic
+#: model:ir.ui.menu,name:sd_clinic.clinic_root_menu
+msgid "Clinic"
+msgstr "کلینیک"
+
+#. module: sd_clinic
+#: model:ir.model.fields.selection,name:sd_clinic.selection__sd_clinic_prescriptions__state__closed
+msgid "Closed"
+msgstr "بسته شده"
+
+#. module: sd_clinic
+#: model:ir.ui.menu,name:sd_clinic.clinic_configuration_menu
+msgid "Configuration"
+msgstr "پیکر بندی"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine__create_uid
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine_inventory__create_uid
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine_types__create_uid
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__create_uid
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__create_uid
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_therapy_types__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine__create_date
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine_inventory__create_date
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine_types__create_date
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__create_date
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__create_date
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_therapy_types__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__description
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__description
+msgid "Description"
+msgstr "توضیحات"
+
+#. module: sd_clinic
+#: model:ir.model.fields.selection,name:sd_clinic.selection__sd_clinic_prescriptions__case_type__disease
+msgid "Disease"
+msgstr "بیماری"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine__display_name
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine_inventory__display_name
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine_types__display_name
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__display_name
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__display_name
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_therapy_types__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: sd_clinic
+#: model:res.groups,name:sd_clinic.group_doctors
+msgid "Doctors"
+msgstr "پزشک ها"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine_inventory__dose
+msgid "Dose"
+msgstr "دوز"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__drug_sensitivity
+msgid "Drug Sensitivity"
+msgstr "حساسیت دارویی"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__emergency_phone
+msgid "Emergency Phone"
+msgstr "تلفن ضروری"
+
+#. module: sd_clinic
+#: model:ir.model.fields.selection,name:sd_clinic.selection__sd_clinic_patients__gender__female
+msgid "Female"
+msgstr "زن"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__message_follower_ids
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__message_partner_ids
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,help:sd_clinic.field_sd_clinic_patients__activity_type_icon
+#: model:ir.model.fields,help:sd_clinic.field_sd_clinic_prescriptions__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__gender
+msgid "Gender"
+msgstr "جنسیت"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__has_message
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine__id
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine_inventory__id
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine_types__id
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__id
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__id
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_therapy_types__id
+msgid "ID"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__activity_exception_icon
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,help:sd_clinic.field_sd_clinic_patients__activity_exception_icon
+#: model:ir.model.fields,help:sd_clinic.field_sd_clinic_prescriptions__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,help:sd_clinic.field_sd_clinic_patients__message_needaction
+#: model:ir.model.fields,help:sd_clinic.field_sd_clinic_prescriptions__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,help:sd_clinic.field_sd_clinic_patients__message_has_error
+#: model:ir.model.fields,help:sd_clinic.field_sd_clinic_patients__message_has_sms_error
+#: model:ir.model.fields,help:sd_clinic.field_sd_clinic_prescriptions__message_has_error
+#: model:ir.model.fields,help:sd_clinic.field_sd_clinic_prescriptions__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__image
+msgid "Image"
+msgstr "تصویر"
+
+#. module: sd_clinic
+#: model:ir.ui.menu,name:sd_clinic.medicine_inventory_menu
+msgid "Inventory"
+msgstr "انبار"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__message_is_follower
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine__write_uid
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine_inventory__write_uid
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine_types__write_uid
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__write_uid
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__write_uid
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_therapy_types__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine__write_date
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine_inventory__write_date
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine_types__write_date
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__write_date
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__write_date
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_therapy_types__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields.selection,name:sd_clinic.selection__sd_clinic_patients__gender__male
+msgid "Male"
+msgstr "مرد"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__medication_records
+msgid "Medication Records"
+msgstr "سابقه مصرف دارو"
+
+#. module: sd_clinic
+#: model:ir.actions.act_window,name:sd_clinic.medicine_act_window
+#: model:ir.actions.act_window,name:sd_clinic.medicine_inventory_act_window
+#: model:ir.ui.menu,name:sd_clinic.medicine
+msgid "Medicine"
+msgstr "دارو"
+
+#. module: sd_clinic
+#: model:ir.model,name:sd_clinic.model_sd_clinic_medicine_inventory
+msgid "Medicine Inventory"
+msgstr "انبار دارو"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine_inventory__medicine_type
+msgid "Medicine Type"
+msgstr "نوع دارو"
+
+#. module: sd_clinic
+#: model:ir.actions.act_window,name:sd_clinic.medicine_types_act_window
+#: model:ir.model,name:sd_clinic.model_sd_clinic_medicine_types
+#: model:ir.ui.menu,name:sd_clinic.medicine_types_menu
+msgid "Medicine Types"
+msgstr "انواع دارو ها"
+
+#. module: sd_clinic
+#: model:ir.model,name:sd_clinic.model_sd_clinic_medicine
+msgid "Medicine list"
+msgstr "لیست دارو"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__message_has_error
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__message_ids
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__mobile_no
+msgid "Mobile No"
+msgstr "شماره موبایل"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__my_activity_date_deadline
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine__name
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine_inventory__name
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine_types__name
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__name
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_therapy_types__name
+#: model_terms:ir.ui.view,arch_db:sd_clinic.medicine_inventory_search
+#: model_terms:ir.ui.view,arch_db:sd_clinic.patients_form
+msgid "Name"
+msgstr "نام"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__national_id
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__national_id
+msgid "National"
+msgstr "کد ملی"
+
+#. module: sd_clinic
+#. odoo-python
+#: code:addons/sd_clinic/models/prescriptions.py:0
+msgid "New"
+msgstr "جدید"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__activity_calendar_event_id
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__activity_date_deadline
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__activity_summary
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__activity_type_id
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__message_needaction_counter
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__message_has_error_counter
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,help:sd_clinic.field_sd_clinic_patients__message_needaction_counter
+#: model:ir.model.fields,help:sd_clinic.field_sd_clinic_prescriptions__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,help:sd_clinic.field_sd_clinic_patients__message_has_error_counter
+#: model:ir.model.fields,help:sd_clinic.field_sd_clinic_prescriptions__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__old_disease
+msgid "Old Disease"
+msgstr "بیماری قبلی"
+
+#. module: sd_clinic
+#: model:ir.model.fields.selection,name:sd_clinic.selection__sd_clinic_prescriptions__state__ongoing
+#: model_terms:ir.ui.view,arch_db:sd_clinic.prescriptions_search
+msgid "Ongoing"
+msgstr "در جریان"
+
+#. module: sd_clinic
+#: model:ir.model.fields.selection,name:sd_clinic.selection__sd_clinic_patients__gender__other
+msgid "Other"
+msgstr "دیگر"
+
+#. module: sd_clinic
+#: model:ir.actions.act_window,name:sd_clinic.patients_act_window
+#: model:ir.model,name:sd_clinic.model_sd_clinic_patients
+#: model:ir.ui.menu,name:sd_clinic.patients_menu
+msgid "Patients"
+msgstr "بیماران"
+
+#. module: sd_clinic
+#: model:ir.actions.act_window,name:sd_clinic.prescriptions_act_window
+#: model:ir.model,name:sd_clinic.model_sd_clinic_prescriptions
+msgid "Prescriptions"
+msgstr "نسخه ها"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__present_disease
+msgid "Present Disease"
+msgstr "بیماری حال حاضر"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__project_id
+#: model_terms:ir.ui.view,arch_db:sd_clinic.prescriptions_search
+msgid "Project"
+msgstr "پروژه"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine_inventory__quantity
+msgid "Quantity"
+msgstr "تعداد"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__rating_ids
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__rating_ids
+msgid "Ratings"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine_inventory__receive_date
+msgid "Receive Date"
+msgstr "تاریخ دریافت"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__activity_user_id
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__message_has_sms_error
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine__sequence
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_medicine_types__sequence
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_therapy_types__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__smoking_drug_history
+msgid "Smoking Drug History"
+msgstr "سابقه مصرف سیگار / مواد مخدر"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__state
+msgid "State"
+msgstr "وضعیت"
+
+#. module: sd_clinic
+#: model:ir.model.fields,help:sd_clinic.field_sd_clinic_patients__activity_state
+#: model:ir.model.fields,help:sd_clinic.field_sd_clinic_prescriptions__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__surgery_hospitalization
+msgid "Surgery Hospitalization"
+msgstr "سابقه جراحی / بستری"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__therapy
+#: model:ir.ui.menu,name:sd_clinic.therapy_types_menu
+msgid "Therapy"
+msgstr "درمان"
+
+#. module: sd_clinic
+#: model:ir.actions.act_window,name:sd_clinic.therapy_types_act_window
+msgid "Therapy Types"
+msgstr "نوع درمان"
+
+#. module: sd_clinic
+#: model:ir.model,name:sd_clinic.model_sd_clinic_therapy_types
+msgid "Therapy types"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,help:sd_clinic.field_sd_clinic_patients__activity_exception_decoration
+#: model:ir.model.fields,help:sd_clinic.field_sd_clinic_prescriptions__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: sd_clinic
+#: model:res.groups,name:sd_clinic.group_users
+msgid "Users"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__visit_date
+msgid "Visit Date"
+msgstr "تاریخ ویزیت"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__visit_no
+msgid "Visit No"
+msgstr "شماره ویزیت"
+
+#. module: sd_clinic
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_patients__website_message_ids
+#: model:ir.model.fields,field_description:sd_clinic.field_sd_clinic_prescriptions__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.model.fields,help:sd_clinic.field_sd_clinic_patients__website_message_ids
+#: model:ir.model.fields,help:sd_clinic.field_sd_clinic_prescriptions__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: sd_clinic
+#: model_terms:ir.ui.view,arch_db:sd_clinic.patients_form
+msgid "e.g. Sight problem"
+msgstr "مثال: مشکل بینایی"
+
+#. module: sd_clinic
+#: model:ir.module.category,description:sd_clinic.module_category_sd_clinic
+msgid "requests."
+msgstr ""
+
+#. module: sd_clinic
+#: model:ir.module.category,name:sd_clinic.module_category_sd_clinic
+msgid "sd_clinic"
+msgstr ""
+
+#. module: sd_clinic
+#: model_terms:ir.ui.view,arch_db:sd_clinic.prescriptions_form
+msgid "search by name or national ID"
+msgstr "جستجو با نام یا کدملی بیمار"
