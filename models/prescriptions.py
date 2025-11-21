@@ -16,6 +16,9 @@ class SdClinicPrescriptions(models.Model):
                              default='ongoing', required=True, store=True, copy=False, tracking=True )
     national_id = fields.Many2one( "sd_clinic.patients", tracking=True, required=True)
     age = fields.Char(compute="_age_compute", store=True, default='')
+    old_disease = fields.Boolean(related="national_id.old_disease")
+    present_disease = fields.Boolean(related="national_id.present_disease")
+    drug_sensitivity = fields.Boolean(related="national_id.drug_sensitivity")
 
     case_type = fields.Selection(selection=[('disease', 'Disease'), ('accident', 'Accident'), ],
         string='Case Type', required=True, default='disease')
@@ -28,15 +31,17 @@ class SdClinicPrescriptions(models.Model):
 
     description = fields.Html()
 
+    medicines = fields.One2many("sd_clinic.medicine_prescripts", "prescript", tracking=True)
+
     @api.depends('national_id',)
     @api.onchange('national_id',)
     def _age_compute(self):
         for rec in self:
             if rec.national_id.birth_date:
                 birth_date = rec.national_id.birth_date
-                print(f">>>>>>>>>>>>>>>\n year: {birth_date.year}  {rec.visit_date.year}")
+                # print(f">>>>>>>>>>>>>>>\n year: {birth_date.year}  {rec.visit_date.year}")
                 rec.age = rec.visit_date.year - birth_date.year
-                print(f"\n rec.age: {rec.age} ")
+                # print(f"\n rec.age: {rec.age} ")
             else:
                 rec.age = ''
 
@@ -53,10 +58,13 @@ class SdClinicPrescriptions(models.Model):
 
         return super().create(vals_list)
 
-
+    @api.onchange('medicines')
+    def medicines_changed(self):
+        # print(f"\n>>>>>>>>>>>>>>>\n medicines: {self.medicines}")
+        pass
 class SdClinicTherapyTypes(models.Model):
     _name = "sd_clinic.therapy_types"
     _description = "Therapy types"
 
-    name = fields.Char(required=True)
+    name = fields.Char(required=True, translate=True)
     sequence = fields.Integer(default=1000)

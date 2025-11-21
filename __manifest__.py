@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-
-
 {
     'name': "SD Clinic",
 
@@ -32,6 +30,8 @@
         'views/inventory_views.xml',
         'views/patients_views.xml',
         'data/ir_sequence.xml',
+        'data/medicine_types_data.xml',
+        'data/therapy_types_data.xml',
 
         ],
     'assets': {

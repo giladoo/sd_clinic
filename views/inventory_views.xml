@@ -9,8 +9,7 @@
             <field name="arch" type="xml">
                 <list editable="bottom">
                     <field name="name"/>
-                    <field name="medicine_type"/>
-                    <field name="dose"/>
+                    <field name="project_id"/>
                     <field name="quantity"/>
                     <field name="receive_date"/>
                 </list>
@@ -23,11 +22,12 @@
             <field name="arch" type="xml">
                 <search >
                     <field name="name"/>
-                    <field name="medicine_type"/>
-                    <field name="dose"/>
+                    <field name="project_id"/>
                     <field name="quantity"/>
                     <field name="receive_date"/>
                     <filter name="medicine_name" string="Name" context="{'group_by': 'name'}"/>
+                    <filter name="project_name" string="Project" context="{'group_by': 'project_id'}"/>
+                    <filter name="receive_date_group" string="Receive" context="{'group_by': 'receive_date'}"/>
                 </search>
             </field>
     </record>
@@ -36,7 +36,45 @@
         <field name="name">Medicine</field>
         <field name="res_model">sd_clinic.medicine_inventory</field>
         <field name="view_mode">list</field>
-        <field name="context">{'search_default_medicine_name': 1}</field>
+        <field name="context">{'search_default_project_name': 1}</field>
+    </record>
+<!--_________________________________ Medicine Prescripts _____________________________________-->
+
+    <record id="medicine_prescripts_list" model="ir.ui.view">
+        <field name="name">Medicine Prescripts</field>
+        <field name="model">sd_clinic.medicine_prescripts</field>
+            <field name="arch" type="xml">
+                <list editable="bottom">
+                    <field name="prescript"/>
+                    <field name="name"/>
+                    <field name="project_id"/>
+                    <field name="description"/>
+                    <field name="on_hand"/>
+                    <field name="quantity"/>
+<!--                    <field name="receive_date"/>-->
+                </list>
+            </field>
+    </record>
+
+    <record id="medicine_prescripts_search" model="ir.ui.view">
+        <field name="name">Medicine Prescripts</field>
+        <field name="model">sd_clinic.medicine_prescripts</field>
+            <field name="arch" type="xml">
+                <search >
+                    <field name="name"/>
+                    <field name="project_id"/>
+                    <field name="quantity"/>
+<!--                    <field name="receive_date"/>-->
+                    <filter name="medicine_name" string="Name" context="{'group_by': 'name'}"/>
+                </search>
+            </field>
+    </record>
+
+    <record id="medicine_prescripts_act_window" model="ir.actions.act_window">
+        <field name="name">Medicine Prescripts</field>
+        <field name="res_model">sd_clinic.medicine_prescripts</field>
+        <field name="view_mode">list</field>
+<!--        <field name="context">{'search_default_medicine_name': 1}</field>-->
     </record>
 <!--_________________________________ Medicine _____________________________________-->
 
@@ -48,6 +86,9 @@
                 <list editable="bottom">
                     <field name="sequence" widget="handle"/>
                     <field name="name"/>
+                    <field name="medicine_type"/>
+                    <field name="dose"/>
+                    <field name="on_hand"/>
                 </list>
             </field>
     </record>
@@ -99,6 +140,12 @@
               id="medicine_types_menu"
               parent="clinic_configuration_menu"
               action="medicine_types_act_window"
+              groups="sd_clinic.group_doctors"/>
+
+    <menuitem name="Medicine Prescripts"
+              id="medicine_prescripts_act_window_menu"
+              parent="clinic_configuration_menu"
+              action="medicine_prescripts_act_window"
               groups="sd_clinic.group_doctors"/>
 
 </odoo>

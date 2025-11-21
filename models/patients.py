@@ -60,8 +60,6 @@ class SdClinicPatients(models.Model):
     # @api.depends_context('allowed_company_ids')
     def _compute_display_name(self):
         super()._compute_display_name()
-        # if len(self.env.context.get('allowed_company_ids', [])) <= 1:
-        #     return
         for rec in self:
             # if rec.name == team_default_name:
             rec.display_name = f'{rec.name} - {rec.national_id}'

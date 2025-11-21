@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="record_0" model="sd_clinic.therapy_types">
+            <field name="name">Outpatient</field>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="record_1" model="sd_clinic.therapy_types">
+            <field name="name">Serum Therapy</field>
+            <field name="sequence">11</field>
+        </record>
+
+             <record id="record_2" model="sd_clinic.therapy_types">
+            <field name="name">Hospital</field>
+            <field name="sequence">12</field>
+        </record>
+
+         </data>
+</odoo>

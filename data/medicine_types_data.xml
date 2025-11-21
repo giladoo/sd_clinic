@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+<!--         <data>-->
+        <record id="record_0" model="sd_clinic.medicine_types">
+            <field name="name">Tablet</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="record_1" model="sd_clinic.medicine_types">
+            <field name="name">Capsule</field>
+            <field name="sequence">1</field>
+        </record>
+
+             <record id="record_2" model="sd_clinic.medicine_types">
+            <field name="name">Syrup</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="record_3" model="sd_clinic.medicine_types">
+            <field name="name">Cream</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="record_4" model="sd_clinic.medicine_types">
+            <field name="name">Ointment</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="record_5" model="sd_clinic.medicine_types">
+            <field name="name">Injection</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="record_6" model="sd_clinic.medicine_types">
+            <field name="name">Inhaler</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="record_7" model="sd_clinic.medicine_types">
+            <field name="name">Drops</field>
+            <field name="sequence">1</field>
+        </record>
+
+         </data>
+</odoo>
